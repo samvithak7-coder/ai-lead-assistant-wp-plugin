@@ -1,0 +1,25 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "BrightPath Digital (Demo)",
+        "blogdescription": "Click the chat bubble in the bottom-right corner to try the AI Lead Assistant plugin."
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/plugins/ai-lead-assistant.php",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/samvithak7-coder/ai-lead-assistant-wp-plugin/main/ai-lead-assistant.php"
+      }
+    },
+    {
+      "step": "activatePlugin",
+      "pluginPath": "ai-lead-assistant.php"
+    }
+  ]
+}
